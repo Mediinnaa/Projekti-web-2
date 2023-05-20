@@ -1,0 +1,22 @@
+Create database Orphic;
+use database orphic;
+CREATE TABLE contactform (
+  id int(11) PRIMARY KEY,
+  name VARCHAR(255) NOT NULL,
+  email VARCHAR(255) NOT NULL,
+  message VARCHAR(255) NOT NULL
+);
+CREATE TABLE  products(
+  id int(11) PRIMARY KEY,
+  image VARCHAR(255) NOT NULL,
+  price VARCHAR(255) NOT NULL,
+  modifikuarnga VARCHAR(255) NOT NULL
+);
+CREATE TABLE users (
+  id int(11) PRIMARY KEY,
+  name VARCHAR(255) NOT NULL,
+  email VARCHAR(255) NOT NULL,
+  password int(11),
+  role('simple','admin')
+);
+
